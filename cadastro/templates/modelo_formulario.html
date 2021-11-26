@@ -1,3 +1,4 @@
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +14,7 @@
 <div class="container" >
     <form action="" method="POST">
           {% csrf_token %}
-          {{ form }}
+          {{ form|crispy }}
         <br>
         <div class="col col-12">
             <tr><button type="submit" class="btn btn-primary">{{botao}}</button></tr>

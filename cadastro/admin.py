@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Jogador, Configuracao
+from cadastro.models import Jogador, Configuracao
 
 
 admin.site.register(Jogador)
