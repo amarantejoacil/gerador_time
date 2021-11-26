@@ -1,1 +1,1 @@
-web: gunicorn gerador_de_time.wsgi --log-file -
+web: gunicorn gerador_de_time:app
