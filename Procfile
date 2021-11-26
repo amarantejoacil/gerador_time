@@ -1,1 +1,1 @@
-web: gunicorn gerador_time.wsgi --log-file -
+web: gunicorn project.wsgi --log-file -
