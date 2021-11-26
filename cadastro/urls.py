@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import IndexView, CreateJogador, DeleteJogador, CreateConfiguracao, AtualizarConfiguracao
-from cadastro.views import views
+from .views import IndexView, CreateJogador, DeleteJogador, CreateConfiguracao, \
+    AtualizarConfiguracao
+from . import views
 
 urlpatterns = [
     path('', IndexView.as_view(), name='pagina-inicial'),
